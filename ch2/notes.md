@@ -23,4 +23,5 @@
     3. The `update` method will not override values within the counter, rather add the count to previously existing keys
     4. Counter objects return 0 for keys that aren't stored within
     5. `Counter.elements()` returns an iterator where counts below one are not included and order isnt guaranteed
+    6. `Counter.subtract()` works exactly like the update method, except for subtracting values from keys
 
