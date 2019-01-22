@@ -1,4 +1,4 @@
-# Principles of algorithmic design
+# Python Data Types and Structures
 
 ## Deques
 1. Fast inserts and pops from either side
@@ -52,3 +52,17 @@ is dictated by the order of the fields upon creation of the named tuple object
 one or more of the values have been replaced 
 5. namedtuple provides `_make`, which allows you to create a named tuple instance given an iterable
 
+## Arrays
+1. Operate very similiarily to lists, however their contents must be of a single type.
+2. The type of array is determined at creation time, and is indicated by a type code provided as 
+an argument to the array
+3. Supports all normal sequence operations (indexing, slicing, concatenation, and multiplication)
+4. Arrays are much much more efficient in terms of storing data than lists (for data of the same type)
+5. An integer array of 1 million integers uses approximately 90% of the memory required to construct
+an integer list of the same 1 million integers
+6. It is recommended to operate on arrays in place using functions like `enumerate`, in order
+to preserve the efficient memory storage and to only copy when absolutely necessary
+7. the memory advantage of arrays is negated when using  operations on them that transform them into
+lists, so using something like a generator would be maintain the memory efficieny while allowing
+you to operate on the array.
+8. Not suitable for performing operations on a matrix of vectors
