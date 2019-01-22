@@ -25,3 +25,14 @@
     5. `Counter.elements()` returns an iterator where counts below one are not included and order isnt guaranteed
     6. `Counter.subtract()` works exactly like the update method, except for subtracting values from keys
 
+## Ordered Dictionaries
+    1. Remember the insertion order of items
+    2. When iterated over, the items will be returned in the order they were inserted
+    3. If two ordered dictionaries have the same insertion order, then they are equal in terms of value
+    Whereas order doesn't matter in non ordered dictionaries
+    4. The `update` function will maintain the same insertion order as the iterable passed in and the previous
+    5. Primarily used with creating sorted dictionaries
+ 
+## defaultdict
+    1. It is a subclass of dict
+
