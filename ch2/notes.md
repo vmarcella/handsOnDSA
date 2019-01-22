@@ -42,4 +42,13 @@ for keys that dont yet exist within the default dictionary
 4. Can be provided a custom function to determine the dictionaries default values
 
 ## named tuples
+1. Named tuple inherits from tuple, making it reverse compatible with tuples
+2. namedtuples are instantiated with the first value being the name and the second value
+being either a string consisting of white space/comma separated values 'x y z' / 'x, y, z'
+or an iterable list containing elements to be used as the field names
+3. named tuple provides `_asdict`, which returns an ordered dictionary in which the order
+is dictated by the order of the fields upon creation of the named tuple object
+4. namedtuple provides `_replace` which returns a new instance of the named tuple where
+one or more of the values have been replaced 
+5. namedtuple provides `_make`, which allows you to create a named tuple instance given an iterable
 
