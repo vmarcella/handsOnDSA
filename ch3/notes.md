@@ -37,3 +37,7 @@ There are two types of recursive cases at it's core
 Backtracking is a form of recursion that is particularly useful for types
 of problems that involve being given multiple options that need to be pruned 
 if they don't give the result that we need
+
+## Runtime analysis
+* Time complexity is used for mesasuring key operations being performed by the algorithm (such as comparison operators)
+* Space complexity is used for measuring space taken up by data structures utilized within the algorithm

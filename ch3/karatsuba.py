@@ -9,7 +9,7 @@ def karatsuba(x, y):
 
         # Get digits divided by 2 rounded up
         digits_2 = int(math.ceil(digits / 2))
-        
+
         # Add 1 to digits if digits is an uneven number
         digits = digits if digits % 2 == 0 else digits + 1
 
@@ -25,5 +25,6 @@ def karatsuba(x, y):
         # Performs the multiplication 
         return (((10**digits) * ac) + bd + ((10**digits_2) * (ad_bc)))
 
+# Calculate the result of 1234 * 3456, using karatsuba multiplication
 result = karatsuba(1234, 3456)
 print(result)
