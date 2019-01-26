@@ -41,3 +41,9 @@ if they don't give the result that we need
 ## Runtime analysis
 * Time complexity is used for mesasuring key operations being performed by the algorithm (such as comparison operators)
 * Space complexity is used for measuring space taken up by data structures utilized within the algorithm
+
+## Merge Sorting
+Merge sorting consists of three simple steps...
+1. Recursively sort the left half of the input array
+2. Recursively sort the right half of the input array
+3. Merge two sorted sub arrays into one

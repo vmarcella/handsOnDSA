@@ -5,7 +5,7 @@ def bitStr(string, length):
 
         Arguments:
             :string: characters available for use
-            :length: desired output 
+            :length: desired output
     '''
     if length == 1:
         return string
