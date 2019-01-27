@@ -47,3 +47,9 @@ Merge sorting consists of three simple steps...
 1. Recursively sort the left half of the input array
 2. Recursively sort the right half of the input array
 3. Merge two sorted sub arrays into one
+
+## Types of Algorithm analysis
+1. Big O notation - The tight upper bound of an algorithm
+2. Omega notation - The tight lower bound of an algorithm
+3. Theta notation - Determines if O(F(n)) == Omega(F(n))
+4. Amortized analysis - Analyzing an entire algorithms overall worst case runtime
