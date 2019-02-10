@@ -30,6 +30,7 @@ class SinglyLinkedList:
                 :data: the data to be stored into the node
         '''
         node = Node(data)
+        self.size += 1
 
         # Check to see if there is at least one node within the list
         if self.tail:
@@ -93,6 +94,7 @@ class SinglyLinkedList:
         '''
         self.head = None
         self.tail = None
+        self.size = 0
 
     def iter(self):
         '''
@@ -115,17 +117,41 @@ def test_single_linked_list():
     single_ll = SinglyLinkedList()
 
     # Demonstrate appending two items into the list
+    print('Appending to the singly linked list') 
     single_ll.append('hello')
     single_ll.append('yeet')
+    print()
+
 
     # Demonstrate iterating over the items of the list
+    print('Iterating over the list using iter') 
     for data in single_ll.iter():
         print(data)
+    print()
+
+    print('deleting a node from the list')
+    single_ll.delete('hello')
+    assert single_ll.size == 1
+    print('PASSED!')
+    print()
+
+    print('Testing out the search function')
+    assert True == single_ll.search('yeet')
+    assert False == single_ll.search('hello')
+    print('PASSED!')
+    print()
+
+    print('Testing out the clear function')
+    single_ll.clear()
+    assert single_ll.size == 0
+    print('PASSED!')
+    print()
 
 def main():
     '''
         Execute all test functions
     '''
+    print('Testing out the singly linked list')
     test_single_linked_list()
 
 if __name__ == '__main__':
