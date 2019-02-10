@@ -13,11 +13,13 @@ s = set()
 ### Arrays
 * Arrays store pieces of data sequentially, meaning that all pieces of memory are also stored sequentially.
 * If there isn't enough sequential memory to allocate for an array, there will be problems
-* Arrays are very fast due to the fact that all memory is sequential, meaning that no jumps around to different bits of memory have to be made
+* Arrays are very fast due to the fact that all memory is sequential, 
+meaning that no jumps around to different bits of memory have to be made
 
 ### Pointer strcutures
 * Pointer structures don't require continuous memory allocations in order to operate
-* Because of this, they can start off relatively small and then grow tremondously in size without the worry of not having enough continuous space.
+* Because of this, they can start off relatively small and then 
+grow tremondously in size without the worry of not having enough continuous space.
 * However, they require more space to store the pointers that point the structure to the next node
 
 ### Working with nodes
